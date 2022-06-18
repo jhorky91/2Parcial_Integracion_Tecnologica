@@ -8,8 +8,9 @@ import 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
 
-import Login from './screens/Login';
-import DrawerHome from './navigators/DrawerHome';
+//import Login from './screens/Login';
+import Home from './screens/Home';
+// import DrawerHome from './navigators/DrawerHome';
 
 
 
@@ -19,11 +20,11 @@ export default function App() {
 
     <NavigationContainer>
 
-      <Stack.Navigator  initialRouteName="Login">
+      <Stack.Navigator  initialRouteName="Home">
 
-        <Stack.Screen  name="Login"  component={Login} options={{  headerShown: false  }} />
+        <Stack.Screen  name="Home"  component={Home} options={{  headerShown: false  }} />
         
-        <Stack.Screen name="DrawerHome" component={DrawerHome} options={{  headerShown: false,  }} />        
+        {/* <Stack.Screen name="DrawerHome" component={DrawerHome} options={{  headerShown: false,  }} />         */}
         
       </Stack.Navigator>
 

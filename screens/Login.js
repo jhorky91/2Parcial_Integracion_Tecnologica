@@ -25,8 +25,9 @@ export default function Login({ navigation }) {
   
     React.useEffect(() => {
       if (response?.type === 'success') {
+          console.log(response);
           const { authentication } = response;
-          navigation.navigate("DrawerHome", {auth: response.authentication})
+          //navigation.navigate("DrawerHome", {auth: response.authentication})
         }
     }, [response]);
      
